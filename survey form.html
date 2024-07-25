@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">We appreciate your feedback. Please fill out this survey.</p>
+
+        <form id="survey-form">
+            <label id="name-label" for="name">Name:</label>
+            <input id="name" type="text" name="name" placeholder="Your name" required>
+            
+            <label id="email-label" for="email">Email:</label>
+            <input id="email" type="email" name="email" placeholder="Your email" required>
+            
+            <label id="number-label" for="number">Age:</label>
+            <input id="number" type="number" name="age" placeholder="Your age" min="1" max="120">
+
+            <label for="dropdown">Which option best describes your current role?</label>
+            <select id="dropdown" name="role">
+                <option value="student">Student</option>
+                <option value="full-time">Full-time Job</option>
+                <option value="part-time">Part-time Job</option>
+                <option value="freelancer">Freelancer</option>
+                <option value="other">Other</option>
+            </select>
+
+            <fieldset>
+                <legend>Which services have you used?</legend>
+                <label><input type="radio" name="service" value="online"> Online</label>
+                <label><input type="radio" name="service" value="in-person"> In-person</label>
+                <label><input type="radio" name="service" value="both"> Both</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>What are your preferred methods of communication?</legend>
+                <label><input type="checkbox" name="communication" value="email"> Email</label>
+                <label><input type="checkbox" name="communication" value="phone"> Phone</label>
+                <label><input type="checkbox" name="communication" value="sms"> SMS</label>
+                <label><input type="checkbox" name="communication" value="other"> Other</label>
+            </fieldset>
+
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" placeholder="Your comments here"></textarea>
+
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
