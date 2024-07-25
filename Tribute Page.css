@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #f4f4f4; /* Light background color for better readability */
+}
+
+#main {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ffffff; /* White background for the main content area */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #1b1b32; /* Dark color for the title */
+}
+
+#img-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px; /* Rounded corners for the image */
+  border: 2px solid #ddd; /* Light border around the image */
+}
+
+#img-caption {
+  font-style: italic;
+  margin-top: 10px;
+  color: #555; /* Gray color for caption */
+}
+
+#tribute-info {
+  margin-bottom: 20px;
+  text-align: left; /* Align text to the left for better readability */
+  max-width: 800px;
+  margin: 0 auto; /* Centering the info text block */
+}
+
+#tribute-link {
+  color: #1b1b32;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #1b1b32;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #ffffff; /* White background for the link button */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+}
+
+#tribute-link:hover {
+  background-color: #1b1b32; /* Dark background on hover */
+  color: #ffffff; /* White text color on hover */
+  text-decoration: none; /* Remove underline on hover */
+}
